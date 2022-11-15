@@ -7,7 +7,7 @@ local THEME_TYPES = {
 	phonemessage = "INFO"
 }
 
-function SendNotification(title, text, timeout, theme)
+function Alert(title, text, timeout, theme)
 	local options = {
 		title = title,
 		text = text,
@@ -24,5 +24,5 @@ function SendNotification(title, text, timeout, theme)
 	end
 end
 
-exports('Alert', SendNotification)
-RegisterNetEvent('okokNotify:Alert', SendNotification)
+exports('Alert', Alert)
+RegisterNetEvent('okokNotify:Alert', Alert)
