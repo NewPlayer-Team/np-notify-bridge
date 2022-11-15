@@ -24,5 +24,5 @@ function SendNotification(title, text, timeout, theme)
 	end
 end
 
-exports('SendNotification', SendNotification)
-RegisterNetEvent('pNotify:SendNotification', SendNotification)
+exports('Alert', SendNotification)
+RegisterNetEvent('okokNotify:Alert', SendNotification)
